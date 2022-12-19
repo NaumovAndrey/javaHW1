@@ -11,7 +11,7 @@ public class Relationship {
     public static void addStaff() {
         System.out.println("Реализация создания сотрудника");
         Staff staff = new Staff();
-        //лекция1
+
     }
 
     /**
