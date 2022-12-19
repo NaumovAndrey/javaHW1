@@ -7,21 +7,24 @@ public class Relationship {
     /**
      * доавление сотрудника
      */
-    public void addStaff() {
+    int index = 1;
+    public static void addStaff() {
         System.out.println("Реализация создания сотрудника");
+        Staff staff = new Staff();
+        //лекция1
     }
 
     /**
      * удаление сотрудника
      */
-    public void delStaff() {
+    public static void delStaff() {
         System.out.println("Реализация удаления сотрудника");
     }
 
     /**
      * вывод сотрудника(ов)
      */
-    public void searchStaff() {
+    public static void searchStaff() {
         System.out.println("Реализация поиска сотрудника по имени, г/р, телефону, должности");
     }
 

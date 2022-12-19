@@ -20,8 +20,21 @@ public class View {
         map.put(4, "Выход");
 
         int num = printMenu(map);
-        System.out.println("input "+num);
+        System.out.println(map.get(num));
 
+        if (num == 1){
+            Relationship.addStaff();
+        } else if (num == 2) {
+            Relationship.delStaff();
+        } else if (num == 3) {
+            Relationship.searchStaff();
+        } else if (num == 4) {
+            System.exit(0);
+        }
+        else {
+            System.out.println("Некорректный ввод!\nВыберите из списка:");
+            menu();
+        }
 
     }
 
