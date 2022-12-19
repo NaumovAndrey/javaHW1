@@ -8,6 +8,7 @@ public class Relationship {
      * доавление сотрудника
      */
     int index = 1;
+
     public static void addStaff() {
         System.out.println("Реализация создания сотрудника");
         Staff staff = new Staff();

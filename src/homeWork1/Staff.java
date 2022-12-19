@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * метод сотрудники наследуется от базового типа человек
  */
-public class Staff extends Human{
+public class Staff extends Human {
     private Post post;
     public static int index;
 
@@ -13,15 +13,18 @@ public class Staff extends Human{
         super(name, yearOfBirth, phoneNumber, listFieldsHuman);
         setPost(Post.valueOf(post));
     }
+
     static {
-        index =1;
+        index = 1;
     }
-    public Staff(String name, Post post){
+
+    public Staff(String name, Post post) {
         super(name);
         //super.setName("Name" + index++);
         setPost(post);
     }
-    public Staff(){
+
+    public Staff() {
 
     }
 

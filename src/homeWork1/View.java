@@ -22,7 +22,7 @@ public class View {
         int num = printMenu(map);
         System.out.println(map.get(num));
 
-        if (num == 1){
+        if (num == 1) {
             Relationship.addStaff();
         } else if (num == 2) {
             Relationship.delStaff();
@@ -30,8 +30,7 @@ public class View {
             Relationship.searchStaff();
         } else if (num == 4) {
             System.exit(0);
-        }
-        else {
+        } else {
             System.out.println("Некорректный ввод!\nВыберите из списка:");
             menu();
         }
